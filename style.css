@@ -360,16 +360,14 @@ body {
   }
   main .first-section ::-moz-placeholder {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: right;
+    font-size: 21px;
+    text-align: center;
     color: #547878;
   }
   main .first-section ::placeholder {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: right;
+    font-size: 21px;
+    text-align: center;
     color: #547878;
   }
   main .second-section {
@@ -425,4 +423,14 @@ body {
     height: 13.75rem;
   }
 }
-/*############ for-tablet-landscape-up #############*//*# sourceMappingURL=style.css.map */
+/*############ for-tablet-landscape-up #############*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}/*# sourceMappingURL=style.css.map */

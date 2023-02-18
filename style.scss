@@ -403,9 +403,8 @@ body {
 
       ::placeholder {
         font-weight: 700;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: right;
+        font-size: 21px;
+        text-align: center;
         color: #547878;
       }
     }
@@ -480,4 +479,15 @@ body {
 /*############ for-tablet-landscape-up #############*/
 @media (min-width: 900px) {
   // never mind
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
