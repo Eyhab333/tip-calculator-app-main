@@ -156,6 +156,20 @@ body {
       }
 
       .numer-of-people {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          width: toRem(13);
+          height: toRem(15);
+          background-image: url(./images/icon-person.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 2;
+        }
       }
 
       label {

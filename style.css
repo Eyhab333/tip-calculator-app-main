@@ -141,6 +141,21 @@ body {
   main .first-section .select-tip .grid input {
     width: 9.164375rem;
   }
+  main .first-section .numer-of-people {
+    position: relative;
+  }
+  main .first-section .numer-of-people::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 0.8125rem;
+    height: 0.9375rem;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
   main .first-section label {
     display: block;
     margin-bottom: 6px;
