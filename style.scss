@@ -277,8 +277,11 @@ body {
   }
 
   .logo {
-    padding-bottom: toRem(87.86);
     margin: 0 auto;
+  }
+
+  aside {
+    height: toRem(87.86);
   }
 
   main {

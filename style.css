@@ -249,8 +249,10 @@ body {
     padding-top: 10.1875rem;
   }
   .logo {
-    padding-bottom: 5.49125rem;
     margin: 0 auto;
+  }
+  aside {
+    height: 5.49125rem;
   }
   main {
     margin: 0 auto;
