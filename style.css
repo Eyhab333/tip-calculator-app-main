@@ -94,11 +94,13 @@ body {
   }
   main .first-section .bill {
     margin-bottom: 2rem;
+    position: relative;
   }
-  main .first-section .bill #bill::after {
+  main .first-section .bill::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 15px;
+    bottom: 15px;
     width: 0.5625rem;
     height: 0.9375rem;
     background-image: url(./images/icon-dollar.svg);

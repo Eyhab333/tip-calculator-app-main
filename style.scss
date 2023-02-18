@@ -100,11 +100,13 @@ body {
 
       .bill {
         margin-bottom: toRem(32);
+        position: relative;
 
-        #bill::after {
+        &::after {
           content: "";
           position: absolute;
-          left: 0;
+          left: 15px;
+          bottom: 15px;
           width: toRem(9);
           height: toRem(15);
           background-image: url(./images/icon-dollar.svg);
