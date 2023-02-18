@@ -111,7 +111,7 @@ body {
   main .first-section .select-tip {
     margin-bottom: 2rem;
   }
-  main .first-section .select-tip p {
+  main .first-section .select-tip h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -286,7 +286,7 @@ body {
   main .first-section .select-tip {
     margin-bottom: 2.5rem;
   }
-  main .first-section .select-tip p {
+  main .first-section .select-tip h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
@@ -381,7 +381,7 @@ body {
     margin-bottom: 2.5625rem;
   }
   main .second-section .total {
-    margin-bottom: 8.3125rem;
+    margin-bottom: 7.625rem;
   }
   main .second-section .flex {
     display: flex;
