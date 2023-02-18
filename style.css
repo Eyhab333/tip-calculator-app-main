@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+body {
+  background: #c5e4e7;
+}
+
+.logo {
+  width: 5.41625rem;
+  height: 3.32125rem;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.125rem;
+  }
+  .logo {
+    margin-bottom: 2.55375rem;
+  }
+  main {
+    background: #ffffff;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+  }
+  main .first-section {
+    margin-bottom: 2rem;
+  }
+  main .first-section .bill {
+    margin-bottom: 2rem;
+  }
+  main .first-section .bill #bill::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0.5625rem;
+    height: 0.9375rem;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  main .first-section .select-tip {
+    margin-bottom: 2rem;
+  }
+  main .first-section .select-tip p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+    margin-bottom: 16px;
+  }
+  main .first-section .select-tip .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  main .first-section .select-tip .grid button {
+    width: 9.164375rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background: #00474b;
+    border-radius: 5px;
+    padding: 0.375rem;
+  }
+  main .first-section .select-tip .grid button:focus {
+    background: #26c2ae;
+    color: #00474b;
+  }
+  main .first-section .select-tip .grid input {
+    width: 9.164375rem;
+  }
+  main .first-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+  }
+  main .first-section input {
+    background: #f3f9fa;
+    border-radius: 5px;
+    width: 19.4375rem;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474b;
+    padding-right: 1.0925rem;
+    padding-left: 1.20375rem;
+    position: relative;
+  }
+  main .first-section input:focus {
+    border: 2px solid #26c2ae;
+  }
+  main .first-section ::-moz-placeholder {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #547878;
+  }
+  main .first-section ::placeholder {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #547878;
+  }
+  main .second-section {
+    background: #00474b;
+    border-radius: 15px;
+    padding: 2.3125rem 1.375rem 1.5rem 1.5rem;
+  }
+  main .second-section .tip-amount {
+    margin-bottom: 1.25rem;
+  }
+  main .second-section .total {
+    margin-bottom: 2rem;
+  }
+  main .second-section .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .second-section .second-section__text h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  main .second-section .second-section__text p {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7f9d9f;
+  }
+  main .second-section .dollars {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26c2ae;
+  }
+  main .second-section .reset-button button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474b;
+    background: #26c2ae;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5625rem;
+  }
+}
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  main {
+    background: #ffffff;
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  }
+  main .first-section {
+    margin-bottom: 2rem;
+  }
+}
+/*############ for-tablet-landscape-up #############*//*# sourceMappingURL=style.css.map */
