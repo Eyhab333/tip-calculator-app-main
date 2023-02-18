@@ -60,13 +60,13 @@ input {
   outline: none;
 }
 
-body {
-  background: #c5e4e7;
-}
-
 .logo {
   width: 5.41625rem;
   height: 3.32125rem;
+}
+
+body {
+  background: #C5E4E7;
 }
 
 /*##### for-phone-only ##########*/
@@ -245,12 +245,182 @@ body {
 }
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
+  body {
+    padding-top: 10.1875rem;
+  }
+  .logo {
+    padding-bottom: 5.49125rem;
+    margin: 0 auto;
+  }
   main {
+    margin: 0 auto;
     background: #ffffff;
     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    width: 57.5rem;
+    padding: 2rem;
   }
   main .first-section {
-    margin-bottom: 2rem;
+    width: 23.6875rem;
+  }
+  main .first-section .bill {
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+  main .first-section .bill::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 0.5625rem;
+    height: 0.9375rem;
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  main .first-section .select-tip {
+    margin-bottom: 2.5rem;
+  }
+  main .first-section .select-tip p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+    margin-bottom: 16px;
+  }
+  main .first-section .select-tip .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem 0.875rem;
+  }
+  main .first-section .select-tip .grid button {
+    width: 7.3125rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+    background: #00474b;
+    border-radius: 5px;
+    padding: 0.375rem;
+  }
+  main .first-section .select-tip .grid button:focus {
+    background: #26c2ae;
+    color: #00474b;
+  }
+  main .first-section .select-tip .grid input {
+    width: 7.3125rem;
+  }
+  main .first-section .numer-of-people {
+    position: relative;
+  }
+  main .first-section .numer-of-people::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 0.8125rem;
+    height: 0.9375rem;
+    background-image: url(./images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  main .first-section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+  }
+  main .first-section input {
+    background: #f3f9fa;
+    border-radius: 5px;
+    width: 100%;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474b;
+    padding-right: 1.0925rem;
+    padding-left: 1.20375rem;
+    position: relative;
+  }
+  main .first-section input:focus {
+    border: 2px solid #26c2ae;
+  }
+  main .first-section ::-moz-placeholder {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #547878;
+  }
+  main .first-section ::placeholder {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #547878;
+  }
+  main .second-section {
+    background: #00474b;
+    border-radius: 15px;
+    padding: 2.5rem;
+    width: 25.8125rem;
+    height: 26.0625rem;
+  }
+  main .second-section .tip-amount {
+    margin-bottom: 2.5625rem;
+  }
+  main .second-section .total {
+    margin-bottom: 8.3125rem;
+  }
+  main .second-section .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .second-section .second-section__text h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  main .second-section .second-section__text p {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7f9d9f;
+  }
+  main .second-section .dollars {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26c2ae;
+  }
+  main .second-section .reset-button button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #00474b;
+    background: #0d686d;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.5625rem;
+  }
+  footer {
+    height: 13.75rem;
   }
 }
 /*############ for-tablet-landscape-up #############*//*# sourceMappingURL=style.css.map */

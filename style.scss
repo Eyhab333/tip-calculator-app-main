@@ -64,15 +64,15 @@ input {
 }
 
 // /* ####### */
-body {
-  background: #c5e4e7;
-}
 
 .logo {
   width: toRem(86.66);
   height: toRem(53.14);
 }
 
+body {
+  background: #C5E4E7;
+}
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
   body {
@@ -272,69 +272,205 @@ body {
 
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
+  body {
+    padding-top: toRem(163);
+  }
+
+  .logo {
+    padding-bottom: toRem(87.86);
+    margin: 0 auto;
+  }
+
   main {
+    margin: 0 auto;
     background: #ffffff;
     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    width: toRem(920);
+    padding: toRem(32);
 
     .first-section {
-      margin-bottom: toRem(32);
+      width: toRem(379);
 
       .bill {
-        label {
-        }
+        margin-bottom: toRem(40);
+        position: relative;
 
-        input {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          width: toRem(9);
+          height: toRem(15);
+          background-image: url(./images/icon-dollar.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 2;
         }
       }
 
       .select-tip {
+        margin-bottom: toRem(40);
+
         p {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #5e7a7d;
+          margin-bottom: 16px;
         }
 
         .grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: toRem(16) toRem(14);
+
           button {
+            width: toRem(117);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #ffffff;
+            background: #00474b;
+            border-radius: 5px;
+            padding: toRem(6);
+
+            &:focus {
+              background: #26c2ae;
+              color: #00474b;
+            }
           }
 
           input {
+            width: toRem(117);
           }
         }
       }
 
       .numer-of-people {
-        label {
-        }
+        position: relative;
 
-        input {
+        &::after {
+          content: "";
+          position: absolute;
+          left: 15px;
+          bottom: 15px;
+          width: toRem(13);
+          height: toRem(15);
+          background-image: url(./images/icon-person.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: 2;
         }
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #5e7a7d;
+      }
+
+      input {
+        background: #f3f9fa;
+        border-radius: 5px;
+        width: 100%;
+        height: toRem(48);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: right;
+        color: #00474b;
+        padding-right: toRem(17.48);
+        padding-left: toRem(19.26);
+        position: relative;
+
+        &:focus {
+          border: 2px solid #26c2ae;
+        }
+      }
+
+      ::placeholder {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: right;
+        color: #547878;
       }
     }
 
     .second-section {
+      background: #00474b;
+      border-radius: 15px;
+      padding: toRem(40);
+      width: toRem(413);
+      height: toRem(417);
+
       .tip-amount {
+        margin-bottom: toRem(41);
       }
 
       .total {
+        margin-bottom: toRem(133);
       }
 
       .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
 
       .second-section__text {
         h2 {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
         }
 
         p {
+          font-weight: 700;
+          font-size: 13px;
+          line-height: 19px;
+          color: #7f9d9f;
         }
       }
 
       .dollars {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 47px;
+        text-align: right;
+        letter-spacing: -0.666667px;
+        color: #26c2ae;
       }
 
       .reset-button {
         button {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          text-align: center;
+          color: #00474b;
+          background: #0d686d;
+          border-radius: 5px;
+          width: 100%;
+          padding: toRem(9);
         }
       }
     }
+  }
+
+  footer {
+    height: toRem(220);
   }
 }
 
